@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Passero One', cursive;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url(../img/fund02.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.area-form {
+    width: 50%;
+    height: 100vh;
+    background: #f8f9fa;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin: 4em 0 8em;
+    font-family: 'Passero One', cursive; 
+}
+
+.logo h1 {
+    font-size: 80px;
+}
+
+.logo h1 b {
+    font-size: 50px;
+    color: #0080FF;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: 200;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 2em;
+}
+
+.form-login {
+    width: 70%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='text'], input[type='password'] {
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    margin-bottom: 2em;
+    outline: none;
+    padding: 0 2em;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input[type='password'] {
+    margin-bottom: .8em;
+}
+
+input[type='text']:focus, input[type='password']:focus {
+    border: 2px solid #0080FF;
+}
+
+.lembrar-user {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 2em 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input[type='checkbox'] {
+    margin-right: .6em;
+    width: 20;
+    height: 20;
+}
+
+.lembrar-user label {
+    font-size: 18px;
+    color: #333;
+}
+
+#btm-logar {
+    display: none;
+}
+
+.fa-check-circle {
+    margin-right: .3em;
+}
+
+.btm-logar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background: #0080ff;
+    color: #f8f9fa;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+    margin-top: 1em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btm-logar:hover {
+    background: #0070ff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.esqueci-senha {
+    font-family: 'Quicksand', sans-serif;
+    margin: 4em 0 .3em;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+}
+
+.esqueci-senha:hover {
+    border-bottom: 2px solid #0080ff;
+    font-weight: bold;
+}
+
+.container-btm {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3em;
+}
