@@ -40,7 +40,7 @@ body {
 
 .logo h1 b {
     font-size: 50px;
-    color: #0080FF;
+    color: #53B567;
 }
 
 .titulo {
@@ -48,6 +48,7 @@ body {
     font-weight: 200;
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .form-login {
@@ -74,7 +75,7 @@ input[type='password'] {
 }
 
 input[type='text']:focus, input[type='password']:focus {
-    border: 2px solid #0080FF;
+    border: 2px solid #53B567;
 }
 
 .lembrar-user {
@@ -112,7 +113,7 @@ input[type='checkbox'] {
     justify-content: center;
     outline: none;
     border: none;
-    background: #0080ff;
+    background: #53B567;
     color: #f8f9fa;
     font-size: 20px;
     font-weight: bold;
@@ -122,7 +123,7 @@ input[type='checkbox'] {
 }
 
 .btm-logar:hover {
-    background: #0070ff;
+    background: #43B587;
     transition: .3s;
     cursor: pointer;
 }
@@ -136,7 +137,7 @@ input[type='checkbox'] {
 }
 
 .esqueci-senha:hover {
-    border-bottom: 2px solid #0080ff;
+    border-bottom: 2px solid #53B567;
     font-weight: bold;
 }
 

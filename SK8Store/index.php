@@ -7,6 +7,8 @@
         
         <?php include "fonte-icons.php"; ?>
         
+        <?php include "favicon.php"; ?>
+        
         <link href="css/login.css" rel="stylesheet">
         
     </head>
