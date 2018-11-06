@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 100%;
+    background: #f8f9fa;
+}
+
+.left-column {
+    width: 250px;
+    height: 100vh;
+    background: #41586E;
+    position: fixed;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-area {
+    width: 100%;
+    height: 60px;
+    background: #35414E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Passero One', cursive;
+}
+
+.logo-area p {
+    font-size: 2.5em;
+    color: #f8f9fa;
+}
+
+.logo-area p b {
+    color: #53B567;
+}
+
+.sale {
+    width: 100%;
+    height: 100px;
+    background: #89CC97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btm-sale {
+    width: 180px;
+    height: 60px;
+    background: #53B567;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.cart {
+    background: #1B252E;
+    width: 60px;
+    border-radius: 2px 0 0 2px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    transition: .2s;
+}
+
+.btm-sale:hover {
+    background: #33B267;
+    transition: .2s;
+}
+
+.cart:hover {
+    background: #25313E;
+    transition: .2s;
+}
+
+.left-column .menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-column .menu {
+    width: 100%;
+}
+
+.left-column ul {
+    list-style: none;
+}
+
+.left-column .menu li a {
+    color: #adbece;
+    display: block;
+    padding: 20px;
+    background: #41586E;
+    font-size: 15px;
+    
+}
+
+.left-column .menu li a:hover {
+    background: #1B252E;
+    color: #fff;
+}
+
+.left-column .menu .icone {
+    font-size: 15px;
+    line-height: 20px;
+    transition: .3s;
+}
+
+.left-column .menu .icone.esquerda {
+    float: left;
+    margin-right: 15px;
+}
+
+.left-column .menu .icone.direita {
+    float: right;
+    margin-left: 15px;
+}
+.left-column .menu ul {
+    display: none;
+}
+
+.left-column .menu ul li a {
+    background: #35414E;
+    color: #adbece;
+}
+
+.left-column .menu .ativo > a {
+    background: #1B252E;
+    color: #fff;
+}
+
+.left-column .menu .ativo > a .icone.direita {
+    transform: rotate(180deg);
+    transition: .3s;
+}
+
+/* fim da coluna esquerda */
+
+/* area de conteudo */
+
+.dashboard {
+    margin-left: 250px;
+    background: #f8f9fa;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    background: #35414E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+/* botão de atividade, notificações do usuário e caixa de pesquisa */
+
+.activity, .search {
+    list-style: none;
+    height: 100%;
+    background: #1B252E;
+    position: relative;
+}
+
+.notifications, .name-user {
+    list-style: none;
+    height: 100%;
+    position: relative;
+}
+
+.activity:hover, .notifications:hover, .search:hover, .name-user:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.activity li a, .notifications li a, .search li a, .name-user li a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #adbece;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.activity li ul, .notifications li ul, .search li ul, .name-user li ul {
+    display: none;
+    list-style: none;
+}
+
+@keyframes slideRight {
+    from { 
+        opacity: 0;
+        transform: translate3d(-30px,0,0);
+    }
+
+    to {
+       opacity: 1; 
+       transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translate3d(0,40px,0);
+    }
+
+    to {
+       opacity: 1; 
+       transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes slideLeft {
+    from { 
+        opacity: 0;
+        transform: translate3d(40px,0,0);
+    }
+
+    to {
+       opacity: 1; 
+       transform: translate3d(0,0,0);
+    }
+}
+ 
+.activity li ul li {
+    width: 330px;
+    height: 200px;
+    background: #41586E;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    box-shadow: 0 0 10px #1B252E;
+    border-radius: 2px;
+    animation: slideRight .4s;
+}
+
+.notifications li ul li {
+    width: 250px;
+    height: 200px;
+    background: #41586E;
+    position: absolute;
+    left: -200px;
+    top: 60px;
+    box-shadow: 0 0 10px #1B252E;
+    border-radius: 2px;
+    animation: slideRight .4s;
+}
+
+.search li ul li {
+    width: 350px;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    left: -295px;
+    top: 60px;
+    box-shadow: 0 0 5px #41586E;
+    border-radius: 2px;
+    animation: slideUp .5s;
+}
+
+.name-user li ul li {
+    width: 180px;
+    height: 250px;
+    background: #fff;
+    position: absolute;
+    left: -25px;
+    top: 60px;
+    box-shadow: 0 0 5px #41586E;
+    border-radius: 2px;
+    animation: slideLeft .5s;
+}
+
+.activity .ativo a {
+    background: #1B252E;
+    font-weight: bold;
+}
+
+.activity .icone.esquerda, .notifications .icone.esquerda, .search .icone.esquerda {
+    float: left;
+    margin-right: 15px;
+}
+
+.activity .icone.direita, .notifications .icone.direita, .search .icone.direita, .name-user .icone.direita {
+    float: right;
+    margin-left: 15px;
+    transition: .4s;
+}
+
+.activity .ativo > a .icone.direita, .notifications .ativo > a .icone.direita, .search .ativo > a .icone.direita, .name-user .ativo > a .icone.direita {
+    transform: rotate(180deg);
+    transition: .4s;
+}
+
+/* ------------ fim das caixas flutuantes ------------- */
+
+.user-informations {
+    display: flex;
+    align-items: center;
+}
+
+.photo-user {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 -10px 0 10px;
+}
+
+.photo-user img {
+    max-width: 100%;
+    min-width: 100%;
+}
